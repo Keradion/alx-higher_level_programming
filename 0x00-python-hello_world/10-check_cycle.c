@@ -7,8 +7,8 @@
 
 int check_cycle(listint_t *list)
 {
-	 listint_t *slow = list; /* move one node at a time */
-	 listint_t *fast = list; /* move two node at a time */
+	listint_t *slow = list;
+	listint_t *fast = list;
 
 	/* if no node exist or a single node only */
 	/* no cycle can be formed with a single node */
