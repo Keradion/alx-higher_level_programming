@@ -40,7 +40,7 @@ listint_t *insert_node(listint_t **head, int number)
 	if (temp->n < new->n)
 		temp->next = new; /* insertio at the end of the list */
 	temp = *head;
-	else if (temp->n > new->n || temp->n < new->n)
+	if (temp->n > new->n || temp->n < new->n)
 		new->next = temp; /* insertion at the beginning */
 
 return (new);
