@@ -14,16 +14,14 @@ listint_t *insert_node(listint_t **head, int number)
 
 	if (new == NULL)
 		return (NULL);
-
+	new->n = number;
+	new->next = NULL;
 	if (*head == NULL)
 	{
 		/* in case of empyt list */
 		*head = new;
 		return (new);
 	}
-
-	new->n = number; /* value insertion on the new node */
-	new->next = NULL;
 
 	while (temp->next != NULL)
 	{
