@@ -12,8 +12,15 @@ listint_t *insert_node(listint_t **head, int number)
 	listint_t *temp = *head; /* for traversal purpouse */
 	listint_t *new = malloc(sizeof(listint_t)); /* creating a new node */
 
-	if (*head == NULL || new == NULL)
+	if (new == NULL)
 		return (NULL);
+
+	if (*head == NULL)
+	{
+		/* in case of empyt list */
+		*head = new;
+		return (new);
+	}
 
 	new->n = number; /* value insertion on the new node */
 	new->next = NULL;
@@ -35,9 +42,8 @@ listint_t *insert_node(listint_t **head, int number)
 
 	if (temp->n < new->n)
 		temp->next = new; /* insertio at the end of the list */
-	else if (temp->n > new->n)
+	else if (temp->n > new->n || temp->n < new->n)
 		new->next = temp; /* insertion at the beginning */
-	return (new);
 
-
+return (new);
 }
