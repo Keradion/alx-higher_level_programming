@@ -6,7 +6,7 @@ from calculator_1 import add, sub, mul, div
 result = 0
 
 if __name__ == '__main__':
-    if len(av) < 3:
+    if len(av) != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     if av[2] == '+':
