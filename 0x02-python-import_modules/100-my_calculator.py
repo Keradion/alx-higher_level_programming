@@ -6,10 +6,10 @@ from calculator_1 import add, sub, mul, div
 result = 0
 
 if __name__ == '__main__':
-    if len(av) != 3:
+    if len(av) < 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    if av[2] == '+':
+    elif av[2] == '+':
         result = add(int(av[1]), int(av[3]))
         print('{} {} {} = {}'.format(av[1], av[2], av[3], result))
     elif av[2] == '-':
