@@ -14,7 +14,7 @@ int is_palindrome(listint_t **head)
 
 	if (temp == NULL || temp->next == NULL)
 		return (1);
-	while (temp != NULL)
+	while (temp != NULL && new_node != NULL)
 	{
 		new_node = malloc(sizeof(listint_t));
 
