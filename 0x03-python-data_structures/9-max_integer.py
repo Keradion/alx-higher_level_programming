@@ -7,7 +7,7 @@ def max_integer(my_list=[]):
     if my_list == []:
         return None
 
-    for each in range(0, (len(my_list):
+    for each in range(0, (len(my_list)):
         if my_list[each] > max_item:
             max_item = my_list[each]
     return max_item
