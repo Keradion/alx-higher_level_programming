@@ -13,7 +13,7 @@ int is_palindrome(listint_t **head)
 	struct listint_s *new_node = NULL;
 
 	if (temp == NULL || temp->next == NULL)
-		return (0);
+		return (1);
 	while (temp != NULL)
 	{
 		new_node = malloc(sizeof(listint_t));
