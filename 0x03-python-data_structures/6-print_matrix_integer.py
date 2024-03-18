@@ -2,8 +2,8 @@
 
 def print_matrix_integer(matrix=[[]]):
     ''' prints a matrix of integers '''
-    if len(matrix) == 0 or len(matrix) == 1:
-        return matrix
+    if len(matrix) == 0:
+        return 
 
     for each in range(0, len(matrix)):
         for every in matrix[each]:
