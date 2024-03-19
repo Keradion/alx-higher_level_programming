@@ -2,7 +2,7 @@
 
 def max_integer(my_list=[]):
     ''' find max item in a list '''
-    max_item = 0
+    max_item = -1
 
     if my_list == []:
         return None
