@@ -9,4 +9,3 @@ def print_matrix_integer(matrix=[[]]):
             print('{:d}'.format(every),end=' ')
         if each != len(matrix) - 1:
             print()
-    print()
