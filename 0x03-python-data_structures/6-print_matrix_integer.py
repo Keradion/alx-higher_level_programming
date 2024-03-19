@@ -7,4 +7,5 @@ def print_matrix_integer(matrix=[[]]):
     for each in range(0, len(matrix)):
         for every in matrix[each]:
             print('{:d}'.format(every), end=' ')
-        print()
+        if each != len(matrix) - 1:
+            print()
