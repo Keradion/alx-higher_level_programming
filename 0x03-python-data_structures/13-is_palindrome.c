@@ -1,9 +1,9 @@
 #include "lists.h"
-
 /**
  * is_palindrome - check if a linked list is palindrome
  * @head: double pointet to the head node of the list
- * return: 1 if its, 0 otherwise
+ *
+ * Return: 1 if its, 0 otherwise
  */
 
 int is_palindrome(listint_t **head)
@@ -35,5 +35,6 @@ int is_palindrome(listint_t **head)
 		temp = temp->next;
 		new_node = new_node->next;
 	}
+	free(new_node);
 	return (1);
 }
