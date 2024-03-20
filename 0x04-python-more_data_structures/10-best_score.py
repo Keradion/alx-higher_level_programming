@@ -2,8 +2,9 @@
 
 def best_score(a_dictionary):
     ''' Returns a key with the biggest value '''
-    max_score = 0
-    max_score_key = 'a'
+
+    max_score = -1
+    max_score_key = ''
 
     if a_dictionary is None:
         return None
